@@ -1,0 +1,1 @@
+Get-ChildItem -Directory | ForEach-Object { Write-Host "`nObtenir la derniere version du repo" $_ | git -C $_.FullName pull --all --recurse-submodules --verbose }
